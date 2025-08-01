@@ -1,5 +1,5 @@
 import express from 'express';
-import Product from '../Models/Product.js';
+import Product from '../models/Product.js';
 import { protect,admin } from '../Midileware/authMiddleware.js'; // Ensure this path is correct
 
 const router = express.Router();
