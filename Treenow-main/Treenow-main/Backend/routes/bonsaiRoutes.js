@@ -1,5 +1,5 @@
 import express from 'express';
-import Bonsai from '../Models/bonsaiModel.js';
+import Bonsai from '../models/bonsaiModel.js';
 import { protect, admin } from '../Midileware/authMiddleware.js'; // ✅ Import authentication middleware
 
 const router = express.Router();
