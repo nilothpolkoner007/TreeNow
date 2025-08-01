@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
   res.send('Tree Care API is running...');
 });
 
-app.use(cors({ origin: `${process.env.FRONTEND_URL}` }));
+app.use(cors());
 app.use('/api/users', userRoutes);
 app.use('/api/bonsai', bonsaiRoutes);
 app.use('/api/diseases', diseaseRoutes);
