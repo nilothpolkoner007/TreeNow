@@ -11,6 +11,7 @@ import userRoutes from './routes/userRoutes.js';
 import adminRoutes from './routes/adminRouts.js';
 import diseaseRoutes from './routes/diseaseRoutes.js';
 import orderRoutes from './routes/orderRouts.js';
+import locationRoutes from './routes/locationRoutes.js';
 
 dotenv.config();
 connectDB();
@@ -35,6 +36,7 @@ app.use('/api/trees', treeRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/api/locations', locationRoutes);
 
 app.use(errorHandler);
 
