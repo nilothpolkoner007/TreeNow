@@ -8,6 +8,7 @@
 +import AdminLocation from './types/AdminLocation';
  
  function App() {
+ }
 @@ .. @@
            <Route path='/admin/disease' element={<AdminDiseaseForm />} />
            <Route path='/admin/products' element={<AdminProductsOrders />} />
